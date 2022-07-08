@@ -34,15 +34,21 @@ btn.addEventListener("click", function (e) {
   });
 
   //   Cek apakah Field-nya kosong
-  if (nama === "") alert("Field Nama tidak boleh kosong!");
-
-  if (hp === "") alert("Field HP tidak boleh kosong!");
-
-  if (alamat === "") alert("Field Alamat tidak boleh kosong!");
-
-  if (email === "") alert("Field Email tidak boleh kosong!");
-
-  if (category.length === 0) alert("Pilih checkbox Kategori setidaknya 1!");
+  if (nama === "") {
+    alert("Field Nama tidak boleh kosong!");
+  }
+  if (hp === "") {
+    alert("Field HP tidak boleh kosong!");
+  }
+  if (alamat === "") {
+    alert("Field Alamat tidak boleh kosong!");
+  }
+  if (email === "") {
+    alert("Field Email tidak boleh kosong!");
+  }
+  if (category.length === 0) {
+    alert("Pilih checkbox Kategori setidaknya 1!");
+  }
 
   // Cek apakah Field-nya sudah terisi dan category-nya > 0
   if (nama && hp && alamat && email && category.length > 0) {
@@ -74,10 +80,10 @@ btn.addEventListener("click", function (e) {
   }
 
   //   Kosongkan Isi Field
-  nama = "";
-  hp = "";
-  alamat = "";
-  email = "";
+  document.getElementById("nama").value = "";
+  document.getElementById("hp").value = "";
+  document.getElementById("alamat").value = "";
+  document.getElementById("email").value = "";
 
   checks.forEach((check) => {
     if (check.checked) {
