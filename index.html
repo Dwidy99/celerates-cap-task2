@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2 | Dwi Yulianto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Biodata</h2>
+
+      <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama" required />
+        <br /><br />
+        <label for="hp">HP</label>
+        <input type="text" name="hp" id="hp" required />
+        <br /><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <br /><br />
+        <label for="alamat">Alamat</label>
+        <textarea
+          name="alamat"
+          id="alamat"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        <br /><br />
+        <input
+          type="checkbox"
+          id="projectManager"
+          class="check"
+          name="pm"
+          value="Project Manager"
+        />
+        <label for="projectManager">Project Manager</label>
+        <br />
+        <input
+          type="checkbox"
+          id="backEnd"
+          class="check"
+          name="be"
+          value="Back End"
+        />
+        <label for="backEnd">Back End</label>
+        <br />
+        <input
+          type="checkbox"
+          id="frontEnd"
+          class="check"
+          name="fe"
+          value="Front End"
+        />
+        <label for="frontEnd">Front End</label>
+        <br />
+        <input
+          type="checkbox"
+          id="devOps"
+          class="check"
+          name="do"
+          value="Dev Ops"
+        />
+        <label for="devOps">Dev Ops</label>
+        <br />
+        <input
+          type="checkbox"
+          id="softwareTester"
+          class="check"
+          name="st"
+          value="Software Tester"
+        />
+        <label for="softwareTester">Software Tester</label>
+        <br />
+
+        <button id="btn">Simpan</button>
+      </form>
+
+      <h3>Table</h3>
+      <table id="table" border="1">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>HP</th>
+            <th>Alamat</th>
+            <th>Email</th>
+            <th>Kategori</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dwi Yulianto</td>
+            <td>0812-3456-7890</td>
+            <td>Jl. Raya</td>
+            <td>dwi@gmail.com</td>
+            <td>Lari, Drive</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
